@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinhador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="imgs">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-KWU_9s-OQORW-aV6YydOVBguc1FJto2yafGDTSxtw&s" alt="">
+            <img src="https://lh3.googleusercontent.com/sS-JnnduliZI1Q_LpOGGBVpAAsLXqXuL2CADvlYRys9RN_Zc6oqLkKQmTDvt1V0b3TNZ6Sle53WaPlwEDnaO_KcUyAf3ZM6Bc9KJtJZIfkS5F5NPh4rGtfkOgyalhwVBzxRYcnF2" alt="" height="250px">
+        </div>
+        
+        <div class="adivinhacao">
+            <h3>Digite o número em que você está pensando?</h3>
+            <input type="text" id="guessInput">
+            <button onclick="checkGuess()">enviar</button>
+            <h4 id="userGuess"></h4>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+    function checkGuess(){
+        let guess = document.getElementById("guessInput").value;
+        document.getElementById("userGuess").innerText = "Você pensou no número: " + guess;
+    }
+</script>

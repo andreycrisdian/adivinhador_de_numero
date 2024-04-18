@@ -1,0 +1,13 @@
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adivinhacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
